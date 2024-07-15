@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>STUDENT REGISTRATION FORM</h2>
+        <form action="#">
+            <label for="firstname">FIRST NAME</label>
+            <input type="text" id="firstname" name="firstname" maxlength="30" placeholder="Enter the First Name" required>
+            <br>
+
+            <label for="lastname">LAST NAME</label>
+            <input type="text" id="lastname" name="lastname" maxlength="30" placeholder="Enter the Last Name" required>
+            <br>
+
+            <label for="dob">DATE OF BIRTH</label>
+            <input type="date" name="" id=""><br>
+
+            <label for="email">EMAIL ID</label>
+            <input type="email" id="email" name="email" placeholder="Enter the Email Address" required><br>
+
+            <label for="mobile">MOBILE NUMBER</label>
+            <input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}" placeholder="Enter the Mobile Number" required><br>
+
+            <label for="gender">GENDER</label>
+            <div class="gender">
+                <input type="radio" id="male" name="gender" value="Male" required>
+                <label for="male" style="margin-right: 10px;">Male</label>
+
+                <input type="radio" id="female" name="gender" value="Female">
+                <label for="female">Female</label>
+            </div>
+            <br>
+
+            <label for="address">ADDRESS</label>
+            <textarea id="address" name="address" rows="3" required></textarea><br>
+
+            <label for="city">CITY</label>
+            <input type="text" id="city" name="city" maxlength="30" placeholder="Enter the City Name" required><br>
+
+            <label for="pincode">PIN CODE</label>
+            <input type="text" id="pincode" name="pincode" pattern="[0-9]{6}" placeholder="Enter the Pin Code" required><br>
+
+            <label for="state">STATE</label>
+            <input type="text" id="state" name="state" maxlength="30" placeholder="Enter the State" required><br>
+
+            <label for="country">COUNTRY</label>
+            <input type="text" id="country" name="country" placeholder="Enter the Country Name" required><br>
+
+            <label for="hobbies">HOBBIES</label>
+            <div class="hobbies">
+                <input type="checkbox" id="drawing" name="hobbies" value="Drawing">
+                <label for="drawing">Drawing</label>
+                <input type="checkbox" id="singing" name="hobbies" value="Singing">
+                <label for="singing">Singing</label>
+                <input type="checkbox" id="dancing" name="hobbies" value="Dancing">
+                <label for="dancing">Dancing</label>
+                <input type="checkbox" id="sketching" name="hobbies" value="Sketching">
+                <label for="sketching">Sketching</label>
+                <input type="text" id="others" name="hobbies" placeholder="Others">
+            </div>
+            <br>
+
+            <label for="qualification">QUALIFICATION</label>
+            <table>
+                <tr>
+                    <th>Sl.No.</th>
+                    <th>Examination</th>
+                    <th>Board</th>
+                    <th>Percentage</th>
+                    <th>Year of passing</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Class X</td>
+                    <td><input type="text" name="board1" maxlength="10"></td>
+                    <td><input type="number" step="0.01" name="percentage1"></td>
+                    <td><input type="number" name="year1"></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Class XII</td>
+                    <td><input type="text" name="board2" maxlength="10"></td>
+                    <td><input type="number" step="0.01" name="percentage2"></td>
+                    <td><input type="number" name="year2"></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Graduation</td>
+                    <td><input type="text" name="board3" maxlength="10"></td>
+                    <td><input type="number" step="0.01" name="percentage3"></td>
+                    <td><input type="number" name="year3"></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Masters</td>
+                    <td><input type="text" name="board4" maxlength="10"></td>
+                    <td><input type="number" step="0.01" name="percentage4"></td>
+                    <td><input type="number" name="year4"></td>
+                </tr>
+            </table>
+            <br>
+
+            <label for="course">COURSES APPLIED FOR</label>
+            <div class="courses">
+                <input type="radio" id="bca" name="course" value="BCA" required>
+                <label for="bca">BCA</label>
+                <input type="radio" id="ba" name="course" value="BA">
+                <label for="ba">B.A</label>
+                <input type="radio" id="bsc" name="course" value="BSc">
+                <label for="bsc">B.Sc</label>
+                <input type="radio" id="bcom" name="course" value="BCom">
+                <label for="bcom">B.Com</label>
+            </div>
+            
+            <div class="btn">
+                <button type="submit">Submit</button>
+                 <button type="reset">Reset</button>
+ 
+            </div>
+                   </form>
+    </div>
+</body>
+</html>
